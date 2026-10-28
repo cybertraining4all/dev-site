@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080d18">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/nav.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/container.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/css.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/modern.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+    {% seo %}
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main_content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Cyber Training 4 All home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-copy"><strong>CYBER TRAINING <span>4 ALL</span></strong><small>Practical knowledge. Stronger defenses.</small></span>
+        </a>
+        <div class="header-note"><span class="status-dot"></span> OPEN KNOWLEDGE · REAL-WORLD SECURITY</div>
+      </div>
+      {% include nav.html %}
+    </header>
+    <main class="page-shell" id="main_content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/github-copy-code-snippet.user.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/js.js' | relative_url }}"></script>
+  </body>
+</html>

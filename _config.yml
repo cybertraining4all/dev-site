@@ -1,0 +1,16 @@
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-menus
+
+title: Cyber Training 4 All
+description: Use this site to build your cyber security capabilities
+
+# Google Analytics
+google_analytics: G-TN12HBMZE7
+
+defaults:
+  - scope:
+      path: "students/Cheat_Sheets"
+    values:
+      pdf: true

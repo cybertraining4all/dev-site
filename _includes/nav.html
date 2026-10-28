@@ -1,0 +1,34 @@
+<nav class="primary-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-home" href="{{ '/' | relative_url }}">Overview</a>
+    <ul class="bar">
+      <li class="dropdown"><a href="{{ '/students/' | relative_url }}">Students <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="dropdown-content">
+          <a href="{{ '/students/blueteam' | relative_url }}">Blue Team</a>
+          <a href="{{ '/students/redteam' | relative_url }}">Red Team</a>
+          <a href="{{ '/students/certifications' | relative_url }}">Certifications</a>
+          <a href="{{ '/students/cheat_sheets' | relative_url }}">Cheat Sheets</a>
+          <a href="{{ '/students/dfir_resources' | relative_url }}">DFIR Resources</a>
+          <a href="{{ '/students/skills' | relative_url }}">Continuing Skills</a>
+          <a href="{{ '/students/labs' | relative_url }}">Labs</a>
+        </div>
+      </li>
+      <li class="dropdown"><a href="{{ '/executive/' | relative_url }}">Executives <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="dropdown-content">
+          <a href="{{ '/executive/governance' | relative_url }}">Governance</a>
+          <a href="{{ '/executive/frameworks' | relative_url }}">Frameworks</a>
+          <a href="{{ '/executive/tooling' | relative_url }}">Tooling</a>
+        </div>
+      </li>
+      <li class="dropdown"><a href="{{ '/employees/' | relative_url }}">Employees <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="dropdown-content">
+          <a href="{{ '/employees/phishing' | relative_url }}">Phishing</a>
+          <a href="{{ '/employees/physical' | relative_url }}">Physical Security</a>
+          <a href="{{ '/employees/scams' | relative_url }}">Scams</a>
+        </div>
+      </li>
+      <li><a href="{{ '/posts' | relative_url }}">Insights</a></li>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+    </ul>
+  </div>
+</nav>
